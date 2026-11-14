@@ -1,0 +1,9 @@
+---
+# Clang-Format configuration for Sigma Chess Engine
+BasedOnStyle: Microsoft
+UseTab: Never
+ReflowComments: false
+SortIncludes: false
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveDeclarations: Consecutive
+AlignConsecutiveMacros: Consecutive

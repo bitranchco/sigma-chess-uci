@@ -1,0 +1,8 @@
+jdart1/Fathom c9c6fef0dddc05d2e242c183acf5833149ab676d (2025-12-23)
+
+Local patch: decompress_pairs() reads the little-endian sizeTable entries through
+from_le_u16(), as it already does for the other table fields. Without it, big-endian
+hosts (PowerPC) decode wrong results whenever a lookup crosses a compressed block.
+
+Local addition: tb_file_counts() (tbprobe.c/.h) returns the WDL and DTZ file counts
+from the last tb_init(), for the engine's "info string Found ..." message.
